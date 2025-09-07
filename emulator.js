@@ -1,0 +1,1 @@
+httpscdn.emulatorjs.orglatestemulator.js
