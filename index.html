@@ -1,36 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8">
   <title>Puckman (EmulatorJS)</title>
-  <style>
-    body {
-      margin: 0;
-      background: black;
-      color: yellow;
-      text-align: center;
-      font-family: sans-serif;
-    }
-    #game {
-      width: 800px;
-      height: 600px;
-      margin: 20px auto;
-      border: 2px solid yellow;
-    }
-  </style>
 </head>
 <body>
   <h1>Puckman (EmulatorJS)</h1>
-  <div id="game"></div>
-
-  <!-- EmulatorJS を CDN から読み込み -->
-  <script src="https://cdn.emulatorjs.org/latest/emulator.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emulatorjs@latest/dist/emulator.js"></script>
   <script>
     EJS_player = "#game";
-    EJS_gameUrl = "roms/puckman.zip";   // ここにROM配置
+    EJS_gameUrl = "roms/puckman.zip";  // ← あなたのROM
     EJS_core = "mame2003";
-    EJS_fullscreenOnLoad = false;
-    EJS_pathtodata = "https://cdn.emulatorjs.org/latest/data/";
   </script>
+  <div id="game" style="width: 640px; height: 480px;"></div>
 </body>
 </html>
