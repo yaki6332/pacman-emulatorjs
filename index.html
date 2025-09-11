@@ -6,16 +6,13 @@
 </head>
 <body>
   <h1>Puckman (EmulatorJS)</h1>
-
-  <div id="game" style="width: 640px; height: 480px;"></div>
-
+  <!-- ローカルに置いた emulator.js を読み込む -->
+  <script src="emulator.js"></script>
   <script>
-    window.EJS_player = "#game";
-    window.EJS_gameUrl = "roms/puckman.zip";
-    window.EJS_core = "mame2003";
+    EJS_player = "#game";
+    EJS_gameUrl = "roms/puckman.zip";  // ← あなたのROM
+    EJS_core = "mame2003";
   </script>
-
-  <!-- CDN を使ってエミュレータ JS を読み込む -->
-  <script src="https://cdn.emulatorjs.org/4.2.3/data/src/emulator.js"></script>
+  <div id="game" style="width: 640px; height: 480px;"></div>
 </body>
 </html>
