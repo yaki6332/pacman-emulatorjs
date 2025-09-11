@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html>
 <head>
   <meta charset="UTF-8">
   <title>Puckman (EmulatorJS)</title>
@@ -9,14 +9,13 @@
 
   <!-- ローカルに置いた emulator.js を読み込む -->
   <script src="emulator.js"></script>
+
   <script>
-    // EmulatorJS 設定
-    window.EJS_player = "#game";
-    window.EJS_gameUrl = "roms/puckman.zip"; // ← roms フォルダ内のROM
-    window.EJS_core = "mame2003";
+    EJS_player = "#game";
+    EJS_gameUrl = "roms/puckman.zip";  // ROM の場所
+    EJS_core = "mame2003";             // 使用するエミュレータコア
   </script>
 
-  <!-- ゲームを表示するエリア -->
-  <div id="game" style="width:640px; height:480px; border:1px solid #000;"></div>
+  <div id="game" style="width: 640px; height: 480px;"></div>
 </body>
 </html>
